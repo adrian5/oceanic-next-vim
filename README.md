@@ -8,29 +8,33 @@ for vim.
 
 ## Installation
 
-[vim-plug](https://github.com/junegunn/vim-plug):
+#### [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
 Plug 'adrian5/oceanic-next-vim'
 ```
 
-[dein](https://github.com/Shougo/dein.vim):
+#### [dein](https://github.com/Shougo/dein.vim):
 
 ```viml
 call dein#add('adrian5/oceanic-next-vim')
 ```
 
-Manually via [vim packages](https://vimhelp.org/repeat.txt.html#packages):
+#### Manually via [vim packages](https://vimhelp.org/repeat.txt.html#packages):
+
+On Linux/macOS:
 
 ```sh
-# Example; nvim on Linux
+# vim
+git clone --depth 1 https://github.com/adrian5/oceanic-next-vim \
+  ~/.vim/pack/plugins/start/oceanic-next-vim
 
-mkdir -p ~/.local/share/nvim/site/pack/oceanic-next/start
-cd ~/.local/share/nvim/site/pack/oceanic-next/start
-git clone --depth 1 https://github.com/adrian5/oceanic-next-vim
+# nvim
+git clone --depth 1 https://github.com/adrian5/oceanic-next-vim \
+  ~/.local/share/nvim/site/pack/plugins/start/oceanic-next-vim
 ```
 
-Finally, add the following to your vimrc and make sure you **restart vim**:
+Finally, add the following to your vimrc and restart vim:
 
 ```viml
 colorscheme oceanicnext
