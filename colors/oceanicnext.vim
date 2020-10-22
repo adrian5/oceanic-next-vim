@@ -62,9 +62,9 @@ if (has("termguicolors") && &termguicolors) || has("gui_running")
     " Text-style (see `:h attr-list`)
     if a:0 >= 2 && strlen(a:2)
       call add(hls, "cterm=" . a:2 . " gui=" . a:2)
+      " NOTE: `cterm` applies to modern terminals too, `gui` is for true GUIs.
     else
       call add(hls, "cterm=NONE gui=NONE")
-      " NOTE: `cterm` applies to modern terminals too, `gui` is for true GUIs.
     endif
 
     " Coloring of undercurl/line
@@ -195,12 +195,12 @@ hi! link OcHint OcLilac
 " See `:help highlight-groups` for reference
 
 if s:config.transparent_bg
-  call s:HL("Normal", s:fg, s:none)
-  call s:HL("Terminal", s:fg, s:none)
-  call s:HL("EndOfBuffer", s:bg5, s:none)
-  call s:HL("Folded", ["#4d708c", 24], s:none)
-  call s:HL("LineNr", s:fg1, s:none)
-  call s:HL("CursorLineNr", s:fg3, s:none)
+  call s:HL("Normal", s:fg)
+  call s:HL("Terminal", s:fg)
+  call s:HL("EndOfBuffer", s:bg5)
+  call s:HL("Folded", ["#4d708c", 24])
+  call s:HL("LineNr", s:fg1)
+  call s:HL("CursorLineNr", s:fg3)
 else
   call s:HL("Normal", s:fg, s:bg)
   call s:HL("Terminal", s:fg, s:bg)
@@ -276,7 +276,7 @@ if s:config.italic_comments
   call s:HL("SpecialComment", ["#a5abb8", 248], s:none, "italic")
   call s:HL("Todo", s:fg3, s:bg5, s:bold . "italic")
 else
-  call s:HL("Comment", s:fg2, s:none)
+  call s:HL("Comment", s:fg2)
   call s:HL("SpecialComment", ["#a5abb8", 248])
   call s:HL("Todo", s:fg3, s:bg5, s:bold)
 endif
