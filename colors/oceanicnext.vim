@@ -433,46 +433,17 @@ hi! link netrwVersion OcGreen
 
 " ----- Syntax (CSS) ------------------------------------------------------- {{{
 
-" NOTE: CSS syntax is parsed to an absurd granularity:
-" https://github.com/vim/vim/blob/master/runtime/syntax/css.vim
-
 hi! link cssAtKeyword Include
 hi! link cssAtRuleLogical OcAqua
+hi! link cssAttr OcAqua
 hi! link cssBraces Normal
 hi! link cssClassName cssTagName
 hi! link cssClassNameDot cssClassName
 hi! link cssIdentifier cssTagName
 hi! link cssImportant OcLilac
+hi! link cssProp OcYellow
 hi! link cssPseudoClassId OcBlue
 hi! link cssTagName OcRed
-
-" Props
-hi! link cssAnimationProp Type
-hi! link cssBackgroundProp Type
-hi! link cssBorderOutlineProp Type
-hi! link cssBorderProp Type
-hi! link cssBoxProp Type
-hi! link cssCascadeProp OcAqua
-hi! link cssColorProp Type
-hi! link cssDimensionProp Type
-hi! link cssFlexibleBoxProp Type
-hi! link cssFontDescriptorProp Type
-hi! link cssFontProp Type
-hi! link cssGeneratedContentProp Type
-hi! link cssIEUIProp Type
-hi! link cssListProp Type
-hi! link cssMarginProp Type
-hi! link cssMediaProp Type
-hi! link cssPaddingProp Type
-hi! link cssPageProp Type
-hi! link cssPositioningProp Type
-hi! link cssPrintProp Type
-hi! link cssRenderProp Type
-hi! link cssTableProp Type
-hi! link cssTextProp Type
-hi! link cssTransformProp Type
-hi! link cssTransitionProp Type
-hi! link cssUIProp Type
 
 " }}}
 
