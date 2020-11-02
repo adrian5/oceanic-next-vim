@@ -658,6 +658,7 @@ hi! link jsThis OcRed
 
 hi! link mkdBold markdownBold
 hi! link mkdCode markdownCode
+hi! link mkdCodeDelimiter mkdCode
 hi! link mkdCodeEnd mkdCode
 hi! link mkdCodeStart mkdCode
 hi! link mkdDelimiter Normal
