@@ -460,6 +460,7 @@ hi! link htmlLink Normal
 hi! link htmlSpecialChar OcLilac
 hi! link htmlSpecialTagName htmlTagName
 hi! link htmlTag OcAqua
+hi! link htmlTagN htmlTagName
 hi! link htmlTagName OcRed
 hi! link htmlTitle Normal
 
