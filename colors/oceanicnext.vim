@@ -415,6 +415,17 @@ hi! link netrwVersion OcGreen
 
 " }}}
 
+" ----- Plugin (nvim-treesitter) ------------------------------------------- {{{
+
+hi! link TSError OcError
+hi! link TSField Normal
+hi! link TSNamespace OcAqua
+hi! link TSParameter Normal
+hi! link TSPunctDelimiter OcDarkAqua
+hi! link TSVariableBuiltin OcRed
+
+" }}}
+
 " ========================================================================== }}}
 
 
