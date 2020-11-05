@@ -573,6 +573,32 @@ hi! link sassProperty Type
 
 " }}}
 
+" ----- Syntax (Shell) ----------------------------------------------------- {{{
+
+hi! link shCaseBar shOperator
+hi! link shCaseLabel OcFg3
+hi! link shCommandSub Normal
+hi! link shDeref OcAqua
+hi! link shDerefOp shDeref
+hi! link shDerefPattern shDeref
+hi! link shDerefSimple shDerefVar
+hi! link shDerefVar OcBrown
+hi! link shDoubleQuote shQuote
+hi! link shFunctionFour shFunction
+hi! link shFunctionOne shFunction
+hi! link shFunctionThree shFunction
+hi! link shFunctionTwo shFunction
+hi! link shQuote shString
+hi! link shSet OcRed
+hi! link shSetList shVariable
+hi! link shShellVariables OcAqua
+hi! link shSnglCase shOperator
+hi! link shTestOpr shOperator
+hi! link shVarAssign shOperator
+hi! link shVariable OcYellow
+
+" }}}
+
 " ----- Syntax (VimL) ------------------------------------------------------ {{{
 
 hi! link vimBracket OcDarkAqua
