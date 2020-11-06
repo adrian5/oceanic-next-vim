@@ -114,10 +114,11 @@ endif
 
 " Foreground shades
 let s:fg1 = ["#405860", 239]
-let s:fg2 = ["#65737e", 242]
-let s:fg3 = ["#adb5c0", 249]
-let s:fg4 = ["#d8dee9", 253]
-let s:fg  = s:fg4
+let s:fg2 = ["#4d616b", 240]
+let s:fg3 = ["#65737e", 242]
+let s:fg4 = ["#adb5c0", 249]
+let s:fg5 = ["#d8dee9", 253]
+let s:fg  = s:fg5
 
 " Background shades
 let s:bg1 = ["#17262e", 233]
@@ -150,8 +151,8 @@ let s:none = ["NONE", "NONE"]
 call s:HL("OcFg", s:fg)
 call s:HL("OcFgBold", s:fg, s:none, s:bold)
 call s:HL("OcFg1", s:fg1)
-call s:HL("OcFg3", s:fg3)
-call s:HL("OcFg3Bold", s:fg3, s:none, s:bold)
+call s:HL("OcFg4", s:fg4)
+call s:HL("OcFg4Bold", s:fg4, s:none, s:bold)
 
 call s:HL("OcRed", s:red)
 call s:HL("OcRedBold", s:red, s:none, s:bold)
@@ -200,7 +201,7 @@ if s:config.transparent_bg
   call s:HL("EndOfBuffer", s:bg5)
   call s:HL("Folded", ["#4d708c", 24])
   call s:HL("LineNr", s:fg1)
-  call s:HL("CursorLineNr", s:fg3)
+  call s:HL("CursorLineNr", s:fg4)
 else
   call s:HL("Normal", s:fg, s:bg)
   call s:HL("Terminal", s:fg, s:bg)
@@ -209,10 +210,10 @@ else
 
   if s:config.gutter_like_bg
     call s:HL("LineNr", s:fg1, s:bg)
-    call s:HL("CursorLineNr", s:fg3, s:bg)
+    call s:HL("CursorLineNr", s:fg4, s:bg)
   else
     call s:HL("LineNr", s:fg1, s:bg2)
-    call s:HL("CursorLineNr", s:fg3, s:bg2)
+    call s:HL("CursorLineNr", s:fg4, s:bg2)
   endif
 endif
 hi! link FoldColumn LineNr
@@ -253,8 +254,8 @@ call s:HL("StatusLine", s:fg, s:bg1)
 hi! link StatusLineTerm StatusLine
 call s:HL("StatusLineNC", s:fg1, s:bg1)
 hi! link StatusLineTermNC StatusLineNC
-call s:HL("TabLine", s:fg1, s:bg1, s:bold)
-call s:HL("TabLineFill", s:fg3, s:bg1, s:bold)
+call s:HL("TabLine", s:fg2, s:bg1, s:bold)
+call s:HL("TabLineFill", s:fg4, s:bg1, s:bold)
 call s:HL("TabLineSel", ["#bdc2cc", 250], s:bg, s:bold)
 call s:HL("VertSplit", s:bg, s:bg1)
 call s:HL("Visual", s:none, ["#2f4c5c", 238])
@@ -272,13 +273,13 @@ hi! link healthSuccess OcGreenBold
 " See `:help group-name` for reference
 
 if s:config.italic_comments
-  call s:HL("Comment", s:fg2, s:none, "italic")
+  call s:HL("Comment", s:fg3, s:none, "italic")
   call s:HL("SpecialComment", ["#a5abb8", 248], s:none, "italic")
-  call s:HL("Todo", s:fg3, s:bg5, s:bold . "italic")
+  call s:HL("Todo", s:fg4, s:bg5, s:bold . "italic")
 else
-  call s:HL("Comment", s:fg2)
+  call s:HL("Comment", s:fg3)
   call s:HL("SpecialComment", ["#a5abb8", 248])
-  call s:HL("Todo", s:fg3, s:bg5, s:bold)
+  call s:HL("Todo", s:fg4, s:bg5, s:bold)
 endif
 
 call s:HL("Underlined", s:none, s:none, "underline")
@@ -332,10 +333,10 @@ hi! link LspDiagnosticsWarningFloating OcWarning
 hi! link LspDiagnosticsInformationFloating OcInfo
 hi! link LspDiagnosticsHintFloating OcHint
 
-hi! link LspDiagnosticsError OcFg1
-hi! link LspDiagnosticsWarning OcFg1
-hi! link LspDiagnosticsInformation OcFg1
-hi! link LspDiagnosticsHint OcFg1
+hi! link LspDiagnosticsError OcFg2
+hi! link LspDiagnosticsWarning OcFg2
+hi! link LspDiagnosticsInformation OcFg2
+hi! link LspDiagnosticsHint OcFg2
 
 endif
 
@@ -362,7 +363,7 @@ call s:HL("CocErrorHighlight", s:none, s:none, "undercurl", s:red)
 call s:HL("CocHintHighlight", s:none, s:none, "undercurl", s:lilac)
 call s:HL("CocInfoHighlight", s:none, s:none, "undercurl", s:blue)
 call s:HL("CocWarningHighlight", s:none, s:none, "undercurl", s:yellow)
-hi! link CocCodeLens OcFg1
+hi! link CocCodeLens OcFg2
 hi! link CocErrorSign OcError
 hi! link CocHighlightText Visual
 hi! link CocHintSign OcHint
@@ -376,7 +377,7 @@ hi! link CocWarningSign OcWarning
 
 " NOTE: These groups color the statusline, not the prompt!
 
-call s:HL("fzf1", s:fg3, s:bg2)
+call s:HL("fzf1", s:fg4, s:bg2)
 hi! link fzf2 fzf1
 hi! link fzf3 fzf1
 
@@ -587,7 +588,7 @@ hi! link sassProperty Type
 " ----- Syntax (Shell) ----------------------------------------------------- {{{
 
 hi! link shCaseBar shOperator
-hi! link shCaseLabel OcFg3
+hi! link shCaseLabel OcFg4
 hi! link shCommandSub Normal
 hi! link shDeref OcAqua
 hi! link shDerefOp shDeref
@@ -614,7 +615,7 @@ hi! link shVariable OcYellow
 
 hi! link vimBracket OcDarkAqua
 hi! link vimCommand OcRed
-hi! link vimCommentTitle OcFg3Bold
+hi! link vimCommentTitle OcFg4Bold
 hi! link vimContinue OcDarkAqua
 hi! link vimEnvvar OcBrown
 hi! link vimFuncVar vimVar
@@ -632,7 +633,7 @@ hi! link vimVar OcYellow
 " ----- Syntax (XML) ------------------------------------------------------- {{{
 
 hi! link xmlAttribPunct Operator
-hi! link xmlCdata OcFg3
+hi! link xmlCdata OcFg4
 hi! link xmlCdataCdata OcOrange
 hi! link xmlCdataEnd xmlCdataStart
 hi! link xmlCdataStart xmlTag
