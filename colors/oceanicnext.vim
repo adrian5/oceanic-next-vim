@@ -351,6 +351,20 @@ endif
 " ==============================================================================
 " {{{
 
+" ----- Plugin (barbar) ---------------------------------------------------- {{{
+
+hi! link BufferCurrent TabLineSel
+hi! link BufferCurrentMod OcGreen
+hi! link BufferCurrentSign OcAqua
+
+hi! link BufferVisibleMod BufferCurrentMod
+
+hi! link BufferInactive TabLine
+hi! link BufferInactiveMod OcYellow
+call s:HL("BufferInactiveSign", s:bg4, s:bg1, s:bold)
+
+" }}}
+
 " ----- Plugin (Buftabline) ------------------------------------------------ {{{
 
 hi! link BuftablineActive TabLine
