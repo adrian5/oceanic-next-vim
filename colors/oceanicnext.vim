@@ -436,7 +436,7 @@ hi! link TSError OcError
 hi! link TSField Normal
 hi! link TSNamespace OcAqua
 hi! link TSParameter Normal
-hi! link TSPunctDelimiter OcDarkAqua
+hi! link TSPunctBracket Normal
 hi! link TSVariableBuiltin OcRed
 
 " }}}
