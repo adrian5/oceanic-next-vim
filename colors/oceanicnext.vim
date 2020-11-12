@@ -151,6 +151,7 @@ let s:none = ["NONE", "NONE"]
 call s:HL("OcFg", s:fg)
 call s:HL("OcFgBold", s:fg, s:none, s:bold)
 call s:HL("OcFg1", s:fg1)
+call s:HL("OcFg2", s:fg2)
 call s:HL("OcFg4", s:fg4)
 call s:HL("OcFg4Bold", s:fg4, s:none, s:bold)
 
@@ -438,6 +439,20 @@ hi! link TSNamespace OcAqua
 hi! link TSParameter Normal
 hi! link TSPunctBracket Normal
 hi! link TSVariableBuiltin OcRed
+
+" }}}
+
+" ----- Plugin (vim-startify) ---------------------------------------------- {{{
+
+hi! link StartifyBracket OcFg2
+hi! link StartifyFile OcLilacBold
+hi! link StartifyFooter Comment
+hi! link StartifyHeader OcGreen
+hi! link StartifyNumber OcOrange
+hi! link StartifyPath OcFg4
+hi! link StartifySection OcBlueBold
+hi! link StartifySelect OcRedBold
+hi! link StartifySlash OcFg2
 
 " }}}
 
