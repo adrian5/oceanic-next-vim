@@ -236,7 +236,7 @@ hi! link ErrorMsg OcRed
 hi! link WarningMsg OcYellow
 call s:HL("ModeMsg", s:fg)
 hi! link MoreMsg ModeMsg
-call s:HL("Search", s:none, s:none, "inverse")
+call s:HL("Search", s:fg3, s:yellow, "inverse")
 call s:HL("MatchParen", s:none, ["#3c5f73", 66])
 call s:HL("Whitespace", s:bg5)
 hi! link NonText Whitespace
