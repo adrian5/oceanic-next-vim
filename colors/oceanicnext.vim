@@ -230,13 +230,13 @@ hi! link CursorColumn CursorLine
 call s:HL("DiffAdd", s:none, ["#2d4a46", 22])
 call s:HL("DiffChange", s:none, ["#29445a", 23])
 call s:HL("DiffDelete", s:none, ["#45353e", 52])
-call s:HL("DiffText", s:none, s:none, "inverse")
+call s:HL("DiffText", s:none, s:bg, "inverse")
 hi! link Directory OcBlue
 hi! link ErrorMsg OcRed
 hi! link WarningMsg OcYellow
 call s:HL("ModeMsg", s:fg)
 hi! link MoreMsg ModeMsg
-call s:HL("Search", s:none, s:none, "inverse")
+call s:HL("Search", s:none, s:bg, "inverse")
 call s:HL("MatchParen", s:none, ["#3c5f73", 66])
 call s:HL("Whitespace", s:bg5)
 hi! link NonText Whitespace
