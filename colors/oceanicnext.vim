@@ -407,6 +407,17 @@ hi! link GitGutterChangeDelete OcOrange
 
 " }}}
 
+" ----- Plugin (vim-signify) ----------------------------------------------- {{{
+
+hi! link SignifyLineAdd DiffAdd
+hi! link SignifyLineChange DiffChange
+hi! link SignifyLineDelete DiffDelete
+hi! link SignifySignAdd OcGreen
+hi! link SignifySignChange OcBlue
+hi! link SignifySignDelete OcRed
+
+" }}}
+
 " ----- Plugin (NERDTree) -------------------------------------------------- {{{
 
 hi! link NERDTreeCWD OcLilacBold
