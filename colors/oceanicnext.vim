@@ -499,6 +499,14 @@ hi! link cssTagName OcRed
 
 " }}}
 
+" ----- Syntax (gitconfig) ------------------------------------------------- {{{
+
+hi! link gitconfigSection OcBlueBold
+hi! link gitconfigVariable OcYellow
+hi! link gitconfigDelim gitconfigString
+
+" }}}
+
 " ----- Syntax (HTML) ------------------------------------------------------ {{{
 
 hi! link htmlEndTag htmlTag
@@ -704,7 +712,7 @@ hi! link yamlFlowCollection Operator
 " ==============================================================================
 " {{{
 
-" NOTE: Following are necessary tweaks for vim-polyglot, whose syntax files
+" NOTE: Following are language tweaks for vim-polyglot, whose syntax files
 " often diverge considerably from those shipping with vim.
 
 if get(g:, "oceanic_for_polyglot", 0)
