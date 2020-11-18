@@ -398,26 +398,6 @@ hi! link fzf3 fzf1
 
 " }}}
 
-" ----- Plugin (vim-gitgutter) --------------------------------------------- {{{
-
-hi! link GitGutterAdd OcGreen
-hi! link GitGutterChange OcBlue
-hi! link GitGutterDelete OcRed
-hi! link GitGutterChangeDelete OcOrange
-
-" }}}
-
-" ----- Plugin (vim-signify) ----------------------------------------------- {{{
-
-hi! link SignifyLineAdd DiffAdd
-hi! link SignifyLineChange DiffChange
-hi! link SignifyLineDelete DiffDelete
-hi! link SignifySignAdd OcGreen
-hi! link SignifySignChange OcBlue
-hi! link SignifySignDelete OcRed
-
-" }}}
-
 " ----- Plugin (NERDTree) -------------------------------------------------- {{{
 
 hi! link NERDTreeCWD OcLilacBold
@@ -450,6 +430,26 @@ hi! link TSNamespace OcAqua
 hi! link TSParameter Normal
 hi! link TSPunctBracket Normal
 hi! link TSVariableBuiltin OcRed
+
+" }}}
+
+" ----- Plugin (vim-gitgutter) --------------------------------------------- {{{
+
+hi! link GitGutterAdd OcGreen
+hi! link GitGutterChange OcBlue
+hi! link GitGutterDelete OcRed
+hi! link GitGutterChangeDelete OcOrange
+
+" }}}
+
+" ----- Plugin (vim-signify) ----------------------------------------------- {{{
+
+hi! link SignifyLineAdd DiffAdd
+hi! link SignifyLineChange DiffChange
+hi! link SignifyLineDelete DiffDelete
+hi! link SignifySignAdd OcGreen
+hi! link SignifySignChange OcBlue
+hi! link SignifySignDelete OcRed
 
 " }}}
 
