@@ -94,6 +94,11 @@ let g:airline_theme = 'default'
 The hartington theme offers its own take on the original, and I found the difference sufficient to
 warrant another port.
 
+**Update:** In the meantime, the theme has been changed and looks closer to this and the original.
+Had I known the author would be open to such revision after years, I would have poured my efforts
+into that instead; that's life! :upside_down_face: \
+As it stands, my port is quite complete and I intend to keep maintaining and polishing it.
+
 ## Contributing
 
 For feedback and requests, please use the Issue tracker.
@@ -103,5 +108,5 @@ For feedback and requests, please use the Issue tracker.
 * For plugin requests, consider listing features (commands) I should test, e.g. certain lists or
   menus to open.
 
-If you want to submit a PR, please do so against the `dev` branch! Include a before/after screenshot
-if possible, in case I don't have the time to properly vet it. Thanks!
+If you want to submit a PR, please do so **against the** `dev` **branch**! Include a before/after
+screenshot if possible, in case I don't have the time to properly vet it. Thanks!
