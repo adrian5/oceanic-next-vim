@@ -71,17 +71,19 @@ shipping with vim.
 
 ### lightline
 
+<img src="https://github.com/adrian5/oceanic-next-vim/blob/master/assets/lightline-preview.png"
+  width="700">
+
 ```viml
 let g:lightline = { 'colorscheme': 'oceanicnext' }
 ```
 
-Important: Make sure you don't have [mhartington/oceanic-next](
-https://github.com/mhartington/oceanic-next) loaded, or its styling will take precedence!
-
 ### vim-airline
 
-Should be loaded automatically when setting `oceanicnext` colorscheme. As with lightline, make sure
-you don't have the _other_ Oceanic Next loaded.
+<img src="https://github.com/adrian5/oceanic-next-vim/blob/master/assets/airline-preview.png"
+  width="700">
+
+Should be loaded automatically when setting `oceanicnext` colorscheme.
 
 To keep using the airline *default* theme, set:
 
