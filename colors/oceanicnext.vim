@@ -425,10 +425,10 @@ hi! link netrwVersion OcGreen
 " ----- Plugin (nvim-treesitter) ------------------------------------------- {{{
 
 hi! link TSError OcError
-hi! link TSField Normal
+hi! link TSField OcFg
 hi! link TSNamespace OcAqua
-hi! link TSParameter Normal
-hi! link TSPunctBracket Normal
+hi! link TSParameter OcFg
+hi! link TSPunctBracket OcFg
 hi! link TSVariableBuiltin OcRed
 
 " }}}
@@ -488,7 +488,7 @@ hi! link StartifySlash OcFg2
 hi! link cssAtKeyword Include
 hi! link cssAtRuleLogical OcAqua
 hi! link cssAttr OcAqua
-hi! link cssBraces Normal
+hi! link cssBraces OcFg
 hi! link cssClassName cssTagName
 hi! link cssClassNameDot cssClassName
 hi! link cssIdentifier cssTagName
@@ -510,25 +510,25 @@ hi! link gitconfigDelim gitconfigString
 " ----- Syntax (HTML) ------------------------------------------------------ {{{
 
 hi! link htmlEndTag htmlTag
-hi! link htmlH1 Normal
+hi! link htmlH1 OcFg
 hi! link htmlH2 htmlH1
 hi! link htmlH3 htmlH1
 hi! link htmlH4 htmlH1
 hi! link htmlH5 htmlH1
 hi! link htmlH6 htmlH1
-hi! link htmlLink Normal
+hi! link htmlLink OcFg
 hi! link htmlSpecialChar OcLilac
 hi! link htmlSpecialTagName htmlTagName
 hi! link htmlTag OcAqua
 hi! link htmlTagN htmlTagName
 hi! link htmlTagName OcRed
-hi! link htmlTitle Normal
+hi! link htmlTitle OcFg
 
 " }}}
 
 " ----- Syntax (JavaScript)------------------------------------------------- {{{
 
-hi! link JavaScriptBraces Normal
+hi! link JavaScriptBraces OcFg
 hi! link JavaScriptLabel OcAqua
 hi! link JavaScriptIdentifier OcRed
 
@@ -637,7 +637,7 @@ hi! link sassProperty Type
 
 hi! link shCaseBar shOperator
 hi! link shCaseLabel OcFg4
-hi! link shCommandSub Normal
+hi! link shCommandSub OcFg
 hi! link shDeref OcAqua
 hi! link shDerefOp shDeref
 hi! link shDerefPattern shDeref
@@ -721,7 +721,7 @@ if get(g:, "oceanic_for_polyglot", 0)
 
 hi! link cppCast Operator
 hi! link cppSTLexception Error
-hi! link cppSTLnamespace Normal
+hi! link cppSTLnamespace OcFg
 hi! link cppSTLtype Type
 
 " }}}
@@ -748,7 +748,7 @@ hi! link mkdCode markdownCode
 hi! link mkdCodeDelimiter mkdCode
 hi! link mkdCodeEnd mkdCode
 hi! link mkdCodeStart mkdCode
-hi! link mkdDelimiter Normal
+hi! link mkdDelimiter OcFg
 hi! link mkdHeading markdownH1
 hi! link mkdInlineUrl markdownURL
 hi! link mkdItalic markdownItalic
@@ -785,7 +785,7 @@ hi! link scssAmpersand sassAmpersand
 hi! link scssNestedProperty sassProperty
 hi! link scssSelectorChar sassClassChar
 hi! link scssSelectorName sassClass
-hi! link scssSemicolon Normal
+hi! link scssSemicolon OcFg
 
 " }}}
 
