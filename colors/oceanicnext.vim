@@ -499,6 +499,15 @@ hi! link cssTagName OcRed
 
 " }}}
 
+" ----- Syntax (gitcommit) ------------------------------------------------- {{{
+
+hi! link gitcommitBranch OcFgBold
+hi! link gitcommitOverflow OcBrown
+hi! link gitcommitSelectedFile OcGreenBold
+hi! link gitcommitUntrackedFile OcRed
+
+" }}}
+
 " ----- Syntax (gitconfig) ------------------------------------------------- {{{
 
 hi! link gitconfigSection OcBlueBold
