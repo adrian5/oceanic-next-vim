@@ -220,6 +220,7 @@ endif
 hi! link FoldColumn LineNr
 hi! link SignColumn LineNr
 call s:HL("ColorColumn", s:none, s:bg2)
+hi! link Conceal OcLilac
 call s:HL("Cursor", s:fg, s:none, "inverse")
 hi! link vCursor Cursor
 hi! link iCursor Cursor
