@@ -500,6 +500,16 @@ hi! link cssTagName OcRed
 
 " }}}
 
+" ----- Syntax (CSV) ------------------------------------------------------- {{{
+
+hi! link CSVColumnEven OcGreen
+hi! link CSVColumnHeaderEven Title
+hi! link CSVColumnHeaderOdd CSVColumnHeaderEven
+hi! link CSVColumnOdd OcYellow
+hi! link CSVDelimiter OcFg
+
+" }}}
+
 " ----- Syntax (gitconfig) ------------------------------------------------- {{{
 
 hi! link gitconfigSection OcBlueBold
