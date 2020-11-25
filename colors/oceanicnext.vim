@@ -510,11 +510,32 @@ hi! link CSVDelimiter OcFg
 
 " }}}
 
+" ----- Syntax (gitcommit) ------------------------------------------------- {{{
+
+hi! link gitcommitBranch OcFgBold
+hi! link gitcommitOverflow OcBrown
+hi! link gitcommitSelectedFile OcGreenBold
+hi! link gitcommitUntrackedFile OcRed
+
+" }}}
+
 " ----- Syntax (gitconfig) ------------------------------------------------- {{{
 
 hi! link gitconfigSection OcBlueBold
 hi! link gitconfigVariable OcYellow
 hi! link gitconfigDelim gitconfigString
+
+" }}}
+
+" ----- Syntax (gitrebase) ------------------------------------------------- {{{
+
+hi! link gitrebaseBreak OcBrown
+hi! link gitrebaseCommit OcLilacBold
+hi! link gitrebaseExec OcBlueBold
+hi! link gitrebaseFixup gitrebaseSquash
+hi! link gitrebaseHash gitrebaseCommit
+hi! link gitrebaseReword OcAqua
+hi! link gitrebaseSquash OcAqua
 
 " }}}
 
