@@ -46,7 +46,7 @@ endif
 " Usage: s:HL(target, fg[2], bg[2], gui, guisp[2])
 
 if (has("termguicolors") && &termguicolors) || has("gui_running")
-  function! s:HL(target, fg, ...)
+  function! s:HL(target, fg, ...) abort
     let hls = [
       \ "hi", a:target,
       \ "guifg=" . a:fg[0]
@@ -75,7 +75,7 @@ if (has("termguicolors") && &termguicolors) || has("gui_running")
     execute join(hls, " ")
   endfunction
 else " 256-color term (assume no `guisp` support)
-  function! s:HL(target, fg, ...)
+  function! s:HL(target, fg, ...) abort
     let hls = [
       \ "hi", a:target,
       \ "ctermfg=" . a:fg[1]
