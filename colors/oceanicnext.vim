@@ -558,6 +558,14 @@ hi! link htmlTitle OcFg
 
 " }}}
 
+" ----- Syntax (nftables) -------------------------------------------------- {{{
+
+hi! link nftablesMask OcGreen
+hi! link nftablesSet OcAqua
+hi! link nftablesSetEntry nftablesSet
+
+" }}}
+
 " ----- Syntax (JavaScript)------------------------------------------------- {{{
 
 hi! link JavaScriptBraces OcFg
