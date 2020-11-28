@@ -355,15 +355,14 @@ endif
 
 " ----- Plugin (barbar) ---------------------------------------------------- {{{
 
+call s:HL("BufferTabpageFill", s:bg4, s:bg1, s:bold)
 hi! link BufferCurrent TabLineSel
-hi! link BufferCurrentMod OcGreen
+hi! link BufferCurrentMod OcGreenBold
 hi! link BufferCurrentSign OcAqua
-
-hi! link BufferVisibleMod BufferCurrentMod
-
+hi! link BufferVisibleMod BufferInactiveMod
+call s:HL("BufferInactiveMod", ["#65876d", 0], s:bg1, s:bold)
+hi! link BufferInactiveSign BufferTabpageFill
 hi! link BufferInactive TabLine
-hi! link BufferInactiveMod OcYellow
-call s:HL("BufferInactiveSign", s:bg4, s:bg1, s:bold)
 
 " }}}
 
