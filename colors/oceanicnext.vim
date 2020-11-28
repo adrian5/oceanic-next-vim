@@ -698,6 +698,35 @@ hi! link shVariable OcYellow
 
 " }}}
 
+" ----- Syntax (systemd) --------------------------------------------------- {{{
+
+hi! link sdDocURI String
+hi! link sdEnvDef OcBrownBold
+hi! link sdEnvDefs sdValue
+hi! link sdExecArgs OcAqua
+hi! link sdExecFile sdFileName
+hi! link sdFileName String
+hi! link sdHeader Title
+hi! link sdKey OcLilac
+hi! link sdOtherSignal OcRed
+hi! link sdUnitName OcYellowBold
+hi! link sdUser OcYellow
+hi! link sdValue OcAqua
+
+hi! link sdAutoMountBlock sdMountBlock
+hi! link sdInstallBlock sdValue
+hi! link sdMountBlock sdValue
+hi! link sdPathBlock sdValue
+hi! link sdScopeBlock sdValue
+hi! link sdServiceBlock sdValue
+hi! link sdSliceBlock sdValue
+hi! link sdSocketBlock sdValue
+hi! link sdSwapBlock sdValue
+hi! link sdTimerBlock sdValue
+hi! link sdUnitBlock sdValue
+
+" }}}
+
 " ----- Syntax (VimL) ------------------------------------------------------ {{{
 
 hi! link vimBracket OcDarkAqua
