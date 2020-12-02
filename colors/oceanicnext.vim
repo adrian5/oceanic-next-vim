@@ -367,7 +367,7 @@ call s:HL("BufferVisibleMod", s:green, s:bg1, s:bold)
 call s:HL("BufferVisibleSign", s:bg4, s:bg1)
 
 hi! link BufferInactive TabLine
-call s:HL("BufferInactiveMod", ["#65876d", 0], s:bg1, s:bold)
+call s:HL("BufferInactiveMod", ["#65876d", 65], s:bg1, s:bold)
 hi! link BufferInactiveSign BufferTabpageFill
 
 " }}}
