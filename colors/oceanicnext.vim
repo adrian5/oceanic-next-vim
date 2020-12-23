@@ -468,7 +468,7 @@ hi! link StartifyHeader OcGreen
 hi! link StartifyNumber OcOrange
 hi! link StartifyPath OcFg4
 hi! link StartifySection OcBlueBold
-hi! link StartifySelect OcRedBold
+hi! link StartifySelect OcGreenBold
 hi! link StartifySlash OcFg2
 
 " }}}
