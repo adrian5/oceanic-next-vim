@@ -515,6 +515,17 @@ hi! link CSVDelimiter OcFg
 
 " }}}
 
+" ----- Syntax (diff) ------------------------------------------------------ {{{
+
+hi! link diffAdded OcGreen
+hi! link diffFile OcLilacBold
+hi! link diffIndexLine OcFg2
+hi! link diffLine OcBlue
+hi! link diffRemoved OcRed
+hi! link diffSubname OcAqua
+
+" }}}
+
 " ----- Syntax (gitcommit) ------------------------------------------------- {{{
 
 hi! link gitcommitBranch OcFgBold
