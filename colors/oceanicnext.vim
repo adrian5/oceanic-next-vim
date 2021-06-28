@@ -325,20 +325,40 @@ hi! link Typedef OcAqua
 
 if has("nvim")
 
-hi! link LspDiagnosticsErrorSign OcError
-hi! link LspDiagnosticsWarningSign OcWarning
-hi! link LspDiagnosticsInformationSign OcInfo
-hi! link LspDiagnosticsHintSign OcHint
+" Highlights for vim.lsp.buf.document_highlight()
+hi! link LspReferenceText Visual
+hi! link LspReferenceRead Visual
+hi! link LspReferenceWrite Visual
 
-hi! link LspDiagnosticsErrorFloating OcError
-hi! link LspDiagnosticsWarningFloating OcWarning
-hi! link LspDiagnosticsInformationFloating OcInfo
-hi! link LspDiagnosticsHintFloating OcHint
+" Other LSP highlights link to these by default (except Underline)
+hi! link LspDiagnosticsDefaultError OcError
+hi! link LspDiagnosticsDefaultWarning OcWarning
+hi! link LspDiagnosticsDefaultInformation OcInfo
+hi! link LspDiagnosticsDefaultHint OcHint
 
-hi! link LspDiagnosticsError OcFg2
-hi! link LspDiagnosticsWarning OcFg2
-hi! link LspDiagnosticsInformation OcFg2
-hi! link LspDiagnosticsHint OcFg2
+" Diagnostic messages placed as virtual text
+hi! link LspDiagnosticsVirtualTextError OcError
+hi! link LspDiagnosticsVirtualTextWarning OcWarning
+hi! link LspDiagnosticsVirtualTextInformation OcInfo
+hi! link LspDiagnosticsVirtualTextHint OcHint
+
+" Underline of text causing diagnostic message
+call s:HL("LspDiagnosticsUnderlineError", s:red, s:none, "undercurl")
+call s:HL("LspDiagnosticsUnderlineWarning", s:yellow, s:none, "undercurl")
+call s:HL("LspDiagnosticsUnderlineInformation", s:blue, s:none, "undercurl")
+call s:HL("LspDiagnosticsUnderlineHint", s:lilac, s:none, "undercurl")
+
+" Diagnostic messages in floating window
+call s:HL("LspDiagnosticsFloatingError", s:fg)
+call s:HL("LspDiagnosticsFloatingWarning", s:fg)
+call s:HL("LspDiagnosticsFloatingInformation", s:fg)
+call s:HL("LspDiagnosticsFloatingHint", s:fg)
+
+" Signs placed in sign column
+hi! link LspDiagnosticsSignError OcError
+hi! link LspDiagnosticsSignWarning OcWarning
+hi! link LspDiagnosticsSignInformation OcInfo
+hi! link LspDiagnosticsSignHint OcHint
 
 endif
 
